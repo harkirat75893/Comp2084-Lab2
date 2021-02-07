@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Lab2.Models.Category>
+<h1> Welcome to Lab 2 of Harkirat Singh Brar(200447333)</h1>
+<a asp-controller="Categories" asp-action="AddCategory"></a>
+@*<ul>
+    @foreach(var c in Model)  
+    {
+        <li>
+            <a asp-controller="Categories" asp-action="Details" asp-route-category="@c.Name">@c.Name</a>
+        </li>
+    }
+</ul>*@
+
+<ul>
+    <li>
+        <a asp-controller="Categories" asp-action="Details" asp-route-category="Food"> Food</a>
+    </li>
+    <li>
+        <a asp-controller="Categories" asp-action="Details" asp-route-category="Tech"> Tech</a>
+    </li>
+    <li>
+        <a asp-controller="Categories" asp-action="Details" asp-route-category="Sports"> Sports</a>
+    </li>
+</ul>
